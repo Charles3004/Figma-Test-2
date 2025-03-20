@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* General Reset */
+/* Body Styling */
+body {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 982px;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    /* overflow: hidden; */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 19%;
+    height: 100vh;
+    max-height: 982px;    
+    background: #eb7f33; /* Black background */
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo Section */
+.logo1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo1 img {
+    width: 60px; /* Adjust size */
+    display: block;
+    margin: 0 auto;
+}
+
+.logo1 h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.logo1 h1::after {
+    content: "solutions";
+    display: block;
+    font-size: 14px;
+    text-transform: lowercase;
+    font-weight: normal;
+    color: white; /* Highlight color */
+}
+
+/* Search Bar */
+.search-bar1 {
+    display: flex;
+    align-items: center;
+    background: #eeee;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.search-bar1 img {
+    width: 16px;
+    margin-right: 8px;
+}
+
+.search-bar1 input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+
+/* Navigation Links */
+.nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.nav-links a img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.nav-links a:hover {
+    background: #ed9659;
+}
+
+/* Settings */
+.settings {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.settings a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.settings img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+/* Content Wrapper */
+/* Main content should have left margin to avoid overlap */
+.content {
+    margin-left: 19%; /* Push main content to the right */
+    width: 81%; /* Take remaining space */
+    padding: 20px;
+    box-sizing: border-box; /* Prevent width overflow */
+    border-top-left-radius: 50%; /* Apply 16.5% curve to top-left */
+    border-bottom-left-radius: 50%; /* Apply 16.5% curve to top-left */
+}
+
+/* Dashboard Styling */
+.dashboard {
+    width: 100%;
+}
+
+/* Header Styling */
+header {
+    width: 100%;  /* Make it responsive */
+    max-width: 1255px; /* Prevents it from stretching too wide */
+    height: 80px;
+    border-bottom: 1.5px solid #ccc; /* Ensure border is visible */
+    padding: 0 20px; /* Adjust spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin: 0 auto; /* Centers the header */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Title */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff7f50;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex: 1; /* Takes available space */
+}
+
+.search-bar img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Icons Styling */
+.icons {
+    display: flex; /* Ensures icons are aligned properly */
+    align-items: center;
+}
+
+.icons img {
+    width: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Welcome Container */
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* New Project Button */
+.new-project {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1,185px; /* Adjust as needed */
+    margin: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 240px; /* Enough space for layering */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; /* Ensures no extra parts are visible */
+}
+
+.carousel-items {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+/* Base row (3 cards but middle is hidden) */
+.card:nth-child(1) { left: 50%; bottom: 0; z-index: 1; }
+.card:nth-child(2) { display: none; } /* Hide the middle card */
+.card:nth-child(3) { right: 50%; bottom: 0; z-index: 1; }
+
+/* Middle row (2 cards covering half of base cards) */
+.card:nth-child(4) { left: 15%; bottom: 10px; z-index: 2; }
+.card:nth-child(5) { right: 15%; bottom: 10px; z-index: 2; }
+
+/* Top row (1 card centered) */
+.card:nth-child(6) { left: 50%; bottom: 25px; transform: translateX(-50%); z-index: 3; }
+
+.carousel-btn {
+    width: 100%;
+    max-width: 1,205px;
+    height: 30px;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/* Templates & Activity Layout */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.templates,
+.activity {
+    width: 48%; /* Splits into 2 equal parts */
+}
+
+/* Templates */
+.template-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.template-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.template-card img {
+    max-width: 100%;
+}
+
+/* Recent Activity */
+.activity {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
